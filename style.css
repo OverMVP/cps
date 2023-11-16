@@ -66,6 +66,9 @@ textarea,
 select {
   font: inherit; }
 
+button:hover {
+  cursor: pointer; }
+
 .section {
   display: flex;
   flex-direction: column;
@@ -812,7 +815,7 @@ select {
     .prices-table-wrapper {
       padding-right: 16px; } }
   .prices-table-wrapper .prices-info {
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 100%;
     align-items: center;
@@ -825,6 +828,9 @@ select {
         min-width: 15%; }
       .prices-table-wrapper .prices-info span:nth-child(3) {
         min-width: 25%; }
+    @media (min-width: 768px) {
+      .prices-table-wrapper .prices-info {
+        display: flex; } }
 
 .prices {
   display: flex;

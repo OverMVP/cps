@@ -1,0 +1,40 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-weight: 500;
+  align-items: center;
+  font-size: 14px;
+  font-family: TT Lakes Medium;
+  color: #7e7e82;
+  padding: 16px 16px 16px 16px;
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 768px) {
+      width: 20%;
+      align-items: flex-start;
+    }
+  }
+  > a {
+    &:visited {
+      color: #7e7e82;
+      @media (min-width: 768px) {
+        width: 60%;
+      }
+    }
+  }
+  > span {
+    text-align: center;
+    @media (min-width: 768px) {
+      width: 20%;
+      text-align: right;
+    }
+  }
+}

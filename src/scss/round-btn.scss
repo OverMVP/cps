@@ -1,0 +1,63 @@
+/* MAIN PARAMS*/
+
+.round-btn {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  min-height: 40px;
+  border: none;
+  transition: 300ms;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+/* BTN BACKGROUNDS */
+
+.call[hidden] {
+  background: url('../img/icons/call.svg');
+  @media (min-width: 768px) and (max-width: 1125px) {
+    display: block;
+  }
+}
+
+.burger {
+  background: url('../img/icons/burger.svg');
+}
+
+.chat[hidden] {
+  background: url('../img/icons/chat.svg');
+  @media (min-width: 768px) and (max-width: 1125px) {
+    display: block;
+  }
+}
+
+.profile[hidden] {
+  background: url('../img/icons/profile.svg');
+  @media (min-width: 768px) and (max-width: 1125px) {
+    position: relative;
+    margin-right: 24px;
+    display: flex;
+
+    &::after {
+      position: absolute;
+      margin-left: 16px;
+      position: absolute;
+      content: '';
+      background: #eaeaea;
+      height: 32px;
+      width: 2px;
+      right: -20px;
+      align-self: center;
+    }
+  }
+}
+
+.repair {
+  background: url('../img/icons/repair.svg');
+}
+
+.status {
+  background: url('../img/icons/checkstatus.svg');
+}

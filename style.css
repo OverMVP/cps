@@ -499,6 +499,7 @@ button:hover {
     flex-direction: column;
     height: 100%;
     padding-top: 40px;
+    padding-left: 4px;
     justify-content: space-between;
     overflow-y: auto;
     gap: 16px; }

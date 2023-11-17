@@ -496,7 +496,10 @@ button:hover {
   .side-menu__list {
     display: flex;
     flex-direction: column;
-    gap: 32px; }
+    gap: 12px; }
+    @media (min-width: 768px) {
+      .side-menu__list {
+        gap: 32px; } }
   .side-menu__list-item > a {
     display: flex;
     position: relative;

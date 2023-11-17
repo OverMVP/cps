@@ -49,3 +49,7 @@ select {
 button:hover {
   cursor: pointer;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

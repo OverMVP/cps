@@ -1,6 +1,6 @@
 .section {
   display: flex;
-  // position: relative;
+  padding-top: 95px;
   flex-direction: column;
   background: #f8f8f8;
   border-bottom: 1px solid #d9fff5;
@@ -106,6 +106,7 @@
   }
 
   .section {
+    padding-top: 0;
     &__article {
       flex-direction: row;
       width: 100%;

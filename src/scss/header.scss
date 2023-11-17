@@ -1,7 +1,12 @@
+.header-wrapper {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
 .header-menu {
   display: flex;
-  // position: fixed;
-  z-index: 2;
   width: 100vw;
   align-items: center;
   padding: 24px 16px 24px 16px;

@@ -3,7 +3,7 @@ $black: #1b1c21;
 .blur-bg {
   display: none;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -45,7 +45,7 @@ $black: #1b1c21;
   padding: 24px 16px 24px 16px;
   max-width: 100%;
   min-width: 320px;
-  height: 100%;
+  height: 100vh;
   background: white;
   transform: translateX(-500px);
   transition: transform 350ms;

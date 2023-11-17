@@ -184,6 +184,8 @@ button:hover {
 
 .header-menu {
   display: flex;
+  z-index: 2;
+  width: 100vw;
   align-items: center;
   padding: 24px 16px 24px 16px;
   justify-content: space-between;
@@ -428,6 +430,7 @@ button:hover {
   left: 0;
   background-color: #fff;
   z-index: 10;
+  transition: display 300ms;
   -webkit-animation: asideBg 500ms forwards;
           animation: asideBg 500ms forwards; }
 
@@ -444,7 +447,8 @@ button:hover {
     opacity: 0.85; } }
 
 .blur-active {
-  display: flex; }
+  display: flex;
+  transition: display 300ms; }
 
 .active {
   top: 0;
@@ -491,15 +495,21 @@ button:hover {
       .side-menu__header .btn:nth-child(1) {
         display: none; } }
   .side-menu__navbar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding-top: 40px;
-    margin-bottom: auto; }
+    justify-content: space-between;
+    overflow-y: auto;
+    gap: 16px; }
   .side-menu__list {
     display: flex;
     flex-direction: column;
-    gap: 12px; }
+    gap: 1rem;
+    height: auto; }
     @media (min-width: 768px) {
       .side-menu__list {
-        gap: 32px; } }
+        gap: 2rem; } }
   .side-menu__list-item > a {
     display: flex;
     position: relative;
@@ -532,7 +542,8 @@ button:hover {
   .side-menu__footer {
     display: flex;
     flex-direction: column;
-    gap: 12px; }
+    gap: 12px;
+    margin-top: 40px; }
   .side-menu__footer-btns {
     display: flex;
     gap: 16px; }
@@ -580,8 +591,7 @@ button:hover {
     color: #7e7e82; }
 
 .footer__langswitcher {
-  padding-top: 40px;
-  padding-bottom: 32px; }
+  padding-top: 40px; }
 
 .footer__btn-lang {
   color: #1b1c21; }

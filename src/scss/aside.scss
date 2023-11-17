@@ -9,6 +9,7 @@ $black: #1b1c21;
   left: 0;
   background-color: #fff;
   z-index: 10;
+  transition: display 300ms;
   animation: asideBg 500ms forwards;
   @keyframes asideBg {
     from {
@@ -22,6 +23,7 @@ $black: #1b1c21;
 
 .blur-active {
   display: flex;
+  transition: display 300ms;
 }
 
 .active {
@@ -79,16 +81,23 @@ $black: #1b1c21;
   }
 
   &__navbar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding-top: 40px;
-    margin-bottom: auto;
+    // margin-bottom: auto;
+    justify-content: space-between;
+    overflow-y: auto;
+    gap: 16px;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 1rem;
+    height: auto;
     @media (min-width: 768px) {
-      gap: 32px;
+      gap: 2rem;
     }
   }
 
@@ -133,6 +142,7 @@ $black: #1b1c21;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-top: 40px;
   }
 
   &__footer-btns {
@@ -194,7 +204,7 @@ $black: #1b1c21;
 
   &__langswitcher {
     padding-top: 40px;
-    padding-bottom: 32px;
+    // margin-bottom: 20px;
   }
 
   &__btn-lang {

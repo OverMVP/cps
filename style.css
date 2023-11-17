@@ -69,8 +69,12 @@ select {
 button:hover {
   cursor: pointer; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 .section {
   display: flex;
+  padding-top: 95px;
   flex-direction: column;
   background: #f8f8f8;
   border-bottom: 1px solid #d9fff5; }
@@ -148,43 +152,50 @@ button:hover {
     width: 50%; }
     .content-wrapper__paragraph[hidden]:last-of-type {
       display: block; }
-  .section__article {
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between; }
-    .section__article__img {
-      width: 40%;
-      border-radius: 20px; }
-  .section__slide-menu {
-    display: flex;
-    align-items: center;
-    width: auto;
-    overflow: hidden;
-    justify-content: space-between;
-    padding-right: 16px; }
-    .section__slide-menu__item__btn {
-      padding-left: 5px;
-      padding-right: 5px; }
-  .section__fullscreen-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    justify-content: space-between; }
-    .section__fullscreen-wrapper .btn-group[hidden] {
+  .section {
+    padding-top: 0; }
+    .section__article {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between; }
+      .section__article__img {
+        width: 40%;
+        border-radius: 20px; }
+    .section__slide-menu {
+      display: flex;
+      align-items: center;
+      width: auto;
+      overflow: hidden;
+      justify-content: space-between;
+      padding-right: 16px; }
+      .section__slide-menu__item__btn {
+        padding-left: 5px;
+        padding-right: 5px; }
+    .section__fullscreen-wrapper {
+      display: flex;
       align-items: center;
       gap: 16px;
-      display: flex;
-      margin-left: auto; }
-      .section__fullscreen-wrapper .btn-group[hidden] label {
-        font-family: TT Lakes Medium;
-        transition: color 300ms; }
-        .section__fullscreen-wrapper .btn-group[hidden] label:hover {
-          cursor: pointer;
-          color: #ff3e79; } }
+      justify-content: space-between; }
+      .section__fullscreen-wrapper .btn-group[hidden] {
+        align-items: center;
+        gap: 16px;
+        display: flex;
+        margin-left: auto; }
+        .section__fullscreen-wrapper .btn-group[hidden] label {
+          font-family: TT Lakes Medium;
+          transition: color 300ms; }
+          .section__fullscreen-wrapper .btn-group[hidden] label:hover {
+            cursor: pointer;
+            color: #ff3e79; } }
+
+.header-wrapper {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0; }
 
 .header-menu {
   display: flex;
-  z-index: 2;
   width: 100vw;
   align-items: center;
   padding: 24px 16px 24px 16px;
